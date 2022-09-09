@@ -19,8 +19,8 @@ class Home extends StatelessWidget {
           leading: FittedBox(
             fit: BoxFit.scaleDown,
             child: Container(
-              child: CircleAvatar(
-                backgroundImage: NetworkImage(
+              child: const CircleAvatar(
+                backgroundImage: const NetworkImage(
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm81XoZa9dFFAFPY-LjxgJ-XAj-KeySicSvw&usqp=CAU"),
               ),
             ),
@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
           title: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'Wellcome back Akuh',
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
@@ -37,10 +37,10 @@ class Home extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Text(
+              const Text(
                 'how are you doing today ?',
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.black,
                   fontSize: 15,
                 ),
@@ -49,7 +49,7 @@ class Home extends StatelessWidget {
           ),
           actions: [
             Container(
-              padding: EdgeInsets.fromLTRB(0, 6, 5, 4),
+              padding: const EdgeInsets.fromLTRB(0, 6, 5, 4),
               child: SizedBox(
                 width: 50,
                 height: 50,
@@ -60,14 +60,14 @@ class Home extends StatelessWidget {
                       return Notif();
                     }));
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.notifications_outlined,
                     color: Colors.black,
                     size: 16,
                   ),
                   style: ElevatedButton.styleFrom(
                     alignment: Alignment.center,
-                    primary: Color.fromARGB(255, 247, 248, 248),
+                    primary: const Color.fromARGB(255, 247, 248, 248),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -81,7 +81,7 @@ class Home extends StatelessWidget {
         body: ListView(
           children: [
             Container(
-              margin: EdgeInsets.fromLTRB(16, 20, 16, 0),
+              margin: const EdgeInsets.fromLTRB(16, 20, 16, 0),
               child: TextField(
                 cursorColor: Colors.black,
                 decoration: InputDecoration(
@@ -93,10 +93,10 @@ class Home extends StatelessWidget {
                   floatingLabelBehavior: FloatingLabelBehavior.never,
                   label: Row(
                     children: [
-                      Icon(Icons.search),
-                      Text(
+                      const Icon(Icons.search),
+                      const Text(
                         'Search',
-                        style: TextStyle(fontSize: 12),
+                        style: const TextStyle(fontSize: 12),
                         overflow: TextOverflow.ellipsis,
                       ),
                     ],
@@ -106,8 +106,8 @@ class Home extends StatelessWidget {
                 onTap: () => print('something'),
               ),
             ),
-            ListTile(
-              title: Text(
+            const ListTile(
+              title: const Text(
                 'Today’s Plan',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
               ),
@@ -128,10 +128,10 @@ class Home extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             'Activity',
-                            style: const TextStyle(
+                            style: TextStyle(
                                 fontSize: 14,
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold),
@@ -162,10 +162,10 @@ class Home extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             'Meditate',
-                            style: const TextStyle(
+                            style: TextStyle(
                                 fontSize: 14,
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold),
@@ -204,22 +204,22 @@ class Home extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             'Food',
-                            style: const TextStyle(
+                            style: TextStyle(
                                 fontSize: 14,
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold),
                           ),
-                          subtitle: Text(
+                          subtitle: const Text(
                             '2 recipes',
                             style: TextStyle(
                               fontSize: 12,
                               color: Colors.white,
                             ),
                           ),
-                          trailing: CircleAvatar(
+                          trailing: const CircleAvatar(
                             backgroundImage: NetworkImage(
                                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdOdj_0zJxzI2nnRCTDuX0w2hG6w69I9recQ&usqp=CAU'),
                           ),
@@ -231,17 +231,17 @@ class Home extends StatelessWidget {
                     margin: const EdgeInsets.fromLTRB(8, 8, 8, 16),
                     height: 72,
                     width: 164,
-                    padding: EdgeInsets.fromLTRB(16, 19, 16, 0),
+                    padding: const EdgeInsets.fromLTRB(16, 19, 16, 0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(9),
-                      color: Color.fromARGB(255, 0, 221, 163),
+                      color: const Color.fromARGB(255, 0, 221, 163),
                     ),
                     child: Column(
                       children: [
-                        Center(
+                        const Center(
                           child: Text(
                             'Let’s Go',
-                            style: const TextStyle(
+                            style: TextStyle(
                                 fontSize: 18,
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold),
@@ -251,7 +251,7 @@ class Home extends StatelessWidget {
                           width: 61,
                           height: 6,
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(4, 0, 79, 1),
+                            color: const Color.fromRGBO(4, 0, 79, 1),
                             borderRadius: BorderRadius.circular(10),
                           ),
                         ),
@@ -261,22 +261,24 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
-            ListTile(
+            const ListTile(
               title: Text(
                 'Upcoming acivities',
-                style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
               ),
               trailing: Text(
                 'See more',
-                style: TextStyle(
-                    fontSize: 12, color: Color.fromARGB(255, 155, 153, 185)),
+                style: const TextStyle(
+                    fontSize: 12,
+                    color: const Color.fromARGB(255, 155, 153, 185)),
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(15, 0, 15, 0),
+              margin: const EdgeInsets.fromLTRB(15, 0, 15, 0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color.fromARGB(255, 247, 248, 248),
+                color: const Color.fromARGB(255, 247, 248, 248),
               ),
               child: Column(
                 children: const [
@@ -302,10 +304,10 @@ class Home extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(15, 15, 15, 0),
+              margin: const EdgeInsets.fromLTRB(15, 15, 15, 0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color.fromARGB(255, 247, 248, 248),
+                color: const Color.fromARGB(255, 247, 248, 248),
               ),
               child: Column(
                 children: const [
@@ -331,12 +333,12 @@ class Home extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(16, 22, 16, 15),
-              child: Text(
+              margin: const EdgeInsets.fromLTRB(16, 22, 16, 15),
+              child: const Text(
                 'Recomended for',
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  color: Color.fromARGB(255, 4, 0, 79),
+                style: const TextStyle(
+                  color: const Color.fromARGB(255, 4, 0, 79),
                   fontWeight: FontWeight.bold,
                   fontSize: 17,
                 ),
@@ -345,11 +347,11 @@ class Home extends StatelessWidget {
             Container(
               height: 132,
               width: 343,
-              margin: EdgeInsets.fromLTRB(15, 15, 15, 15),
-              padding: EdgeInsets.fromLTRB(20, 20, 15, 15),
+              margin: const EdgeInsets.fromLTRB(15, 15, 15, 15),
+              padding: const EdgeInsets.fromLTRB(20, 20, 15, 15),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Color.fromARGB(255, 247, 248, 248),
+                color: const Color.fromARGB(255, 247, 248, 248),
               ),
               child: Column(
                 children: [
@@ -358,15 +360,15 @@ class Home extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 0, 4),
-                            child: Text(
+                            margin: const EdgeInsets.fromLTRB(0, 0, 0, 4),
+                            child: const Text(
                               'Fullbody Workout',
                               overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 14, fontWeight: FontWeight.bold),
                             ),
                           ),
-                          Text(
+                          const Text(
                             '11 Excresise | 32 minutes',
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
@@ -376,20 +378,20 @@ class Home extends StatelessWidget {
                         ],
                       ),
                       subtitle: Container(
-                        margin: EdgeInsets.fromLTRB(0, 15, 0, 0),
+                        margin: const EdgeInsets.fromLTRB(0, 15, 0, 0),
                         child: Align(
                           alignment: Alignment.bottomLeft,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               'view more',
                               overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 12,
                               ),
                             ),
                             style: ElevatedButton.styleFrom(
-                              primary: Color.fromRGBO(0, 221, 163, 1),
+                              primary: const Color.fromRGBO(0, 221, 163, 1),
                             ),
                           ),
                         ),
@@ -402,11 +404,11 @@ class Home extends StatelessWidget {
             Container(
               height: 132,
               width: 343,
-              margin: EdgeInsets.fromLTRB(15, 15, 15, 15),
-              padding: EdgeInsets.fromLTRB(20, 20, 15, 15),
+              margin: const EdgeInsets.fromLTRB(15, 15, 15, 15),
+              padding: const EdgeInsets.fromLTRB(20, 20, 15, 15),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Color.fromARGB(255, 247, 248, 248),
+                color: const Color.fromARGB(255, 247, 248, 248),
               ),
               child: Column(
                 children: [
@@ -415,15 +417,15 @@ class Home extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          margin: EdgeInsets.fromLTRB(0, 0, 0, 4),
-                          child: Text(
+                          margin: const EdgeInsets.fromLTRB(0, 0, 0, 4),
+                          child: const Text(
                             'Lowerbody Workout',
                             overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Text(
+                        const Text(
                           '11 Excresise | 32 minutes',
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
@@ -433,20 +435,20 @@ class Home extends StatelessWidget {
                       ],
                     ),
                     subtitle: Container(
-                      margin: EdgeInsets.fromLTRB(0, 15, 0, 0),
+                      margin: const EdgeInsets.fromLTRB(0, 15, 0, 0),
                       child: Align(
                         alignment: Alignment.bottomLeft,
                         child: ElevatedButton(
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             'view more',
                             overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 12,
                             ),
                           ),
                           style: ElevatedButton.styleFrom(
-                            primary: Color.fromRGBO(0, 221, 163, 1),
+                            primary: const Color.fromRGBO(0, 221, 163, 1),
                           ),
                         ),
                       ),
@@ -457,64 +459,79 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              height: 132,
-              width: 343,
-              margin: EdgeInsets.fromLTRB(15, 15, 15, 15),
-              padding: EdgeInsets.fromLTRB(20, 20, 15, 15),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Color.fromARGB(255, 247, 248, 248),
-              ),
-              child: Column(
-                children: [
-                  ListTile(
-                    title: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Container(
+                height: 132,
+                width: 343,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: const Color.fromARGB(255, 247, 248, 248),
+                ),
+                child: Column(
+                  children: [
+                    Row(
                       children: [
-                        Container(
-                          margin: EdgeInsets.fromLTRB(0, 0, 0, 4),
-                          child: Text(
-                            'AB Workout',
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                                fontSize: 14, fontWeight: FontWeight.bold),
+                        Expanded(
+                          flex: 3,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 4),
+                                child: const Text(
+                                  'AB Workout',
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              const Text(
+                                '11 Excresise | 32 minutes',
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontSize: 10,
+                                ),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+                                child: Align(
+                                  alignment: Alignment.bottomLeft,
+                                  child: ElevatedButton(
+                                    onPressed: () {},
+                                    style: ElevatedButton.styleFrom(
+                                      primary:
+                                          const Color.fromRGBO(0, 221, 163, 1),
+                                    ),
+                                    child: const Text(
+                                      'view more',
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                        Text(
-                          '11 Excresise | 32 minutes',
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontSize: 10,
+                        Expanded(
+                          flex: 1,
+                          child: SizedBox(
+                            height: 132,
+                            child: Image.network(
+                              'https://media.istockphoto.com/vectors/man-doing-sit-ups-exercise-abdominals-exercise-flat-vector-isolated-vector-id1407639801?k=20&m=1407639801&s=612x612&w=0&h=ag8JoxjqFWBl7F_crpR-WWLm3dup7tM7AZd9PNp9kGU=',
+                              fit: BoxFit.contain,
+                            ),
                           ),
                         ),
                       ],
-                    ),
-                    subtitle: Container(
-                      margin: EdgeInsets.fromLTRB(0, 15, 0, 0),
-                      child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: Text(
-                            'view more',
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                              fontSize: 12,
-                            ),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            primary: Color.fromRGBO(0, 221, 163, 1),
-                          ),
-                        ),
-                      ),
-                    ),
-                    trailing: Container(
-                      child: Image.network(
-                          'https://media.istockphoto.com/vectors/man-doing-sit-ups-exercise-abdominals-exercise-flat-vector-isolated-vector-id1407639801?k=20&m=1407639801&s=612x612&w=0&h=ag8JoxjqFWBl7F_crpR-WWLm3dup7tM7AZd9PNp9kGU='),
-                    ),
-                  ),
-                ],
+                    )
+                  ],
+                ),
               ),
             ),
           ],
@@ -538,8 +555,8 @@ class _SwitchExampleState extends State<SwitchExample> {
     return Switch(
       // This bool value toggles the switch.
       value: unLight,
-      inactiveTrackColor: Color.fromRGBO(4, 0, 79, 1),
-      activeColor: Color.fromRGBO(0, 221, 163, 1),
+      inactiveTrackColor: const Color.fromRGBO(4, 0, 79, 1),
+      activeColor: const Color.fromRGBO(0, 221, 163, 1),
       onChanged: (bool value) {
         // This is called when the user toggles the switch.
         setState(
