@@ -344,124 +344,10 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              height: 132,
-              width: 343,
-              margin: const EdgeInsets.fromLTRB(15, 15, 15, 15),
-              padding: const EdgeInsets.fromLTRB(20, 20, 15, 15),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: const Color.fromARGB(255, 247, 248, 248),
-              ),
-              child: Column(
-                children: [
-                  ListTile(
-                      title: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.fromLTRB(0, 0, 0, 4),
-                            child: const Text(
-                              'Fullbody Workout',
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(
-                                  fontSize: 14, fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          const Text(
-                            '11 Excresise | 32 minutes',
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                              fontSize: 10,
-                            ),
-                          ),
-                        ],
-                      ),
-                      subtitle: Container(
-                        margin: const EdgeInsets.fromLTRB(0, 15, 0, 0),
-                        child: Align(
-                          alignment: Alignment.bottomLeft,
-                          child: ElevatedButton(
-                            onPressed: () {},
-                            child: const Text(
-                              'view more',
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(
-                                fontSize: 12,
-                              ),
-                            ),
-                            style: ElevatedButton.styleFrom(
-                              primary: const Color.fromRGBO(0, 221, 163, 1),
-                            ),
-                          ),
-                        ),
-                      ),
-                      trailing: Image.network(
-                          'https://media.istockphoto.com/vectors/cute-young-girl-in-red-shorts-jump-in-rope-vector-id1207731535?k=20&m=1207731535&s=612x612&w=0&h=SO_Ik57gD2A_q8OoTWScZV-6OaV2ldoG6-QMhZh3PF8=')),
-                ],
-              ),
-            ),
-            Container(
-              height: 132,
-              width: 343,
-              margin: const EdgeInsets.fromLTRB(15, 15, 15, 15),
-              padding: const EdgeInsets.fromLTRB(20, 20, 15, 15),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: const Color.fromARGB(255, 247, 248, 248),
-              ),
-              child: Column(
-                children: [
-                  ListTile(
-                    title: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          margin: const EdgeInsets.fromLTRB(0, 0, 0, 4),
-                          child: const Text(
-                            'Lowerbody Workout',
-                            overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                                fontSize: 14, fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        const Text(
-                          '11 Excresise | 32 minutes',
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontSize: 10,
-                          ),
-                        ),
-                      ],
-                    ),
-                    subtitle: Container(
-                      margin: const EdgeInsets.fromLTRB(0, 15, 0, 0),
-                      child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: const Text(
-                            'view more',
-                            overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                              fontSize: 12,
-                            ),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            primary: const Color.fromRGBO(0, 221, 163, 1),
-                          ),
-                        ),
-                      ),
-                    ),
-                    trailing: Image.network(
-                        'https://media.istockphoto.com/vectors/fitness-training-in-gym-athletic-woman-running-on-treadmill-young-vector-id1338513375?k=20&m=1338513375&s=612x612&w=0&h=3aaQscOfjX4B5dv_D1lqEOVpG6_WYg6qVmfcpTiol28='),
-                  ),
-                ],
-              ),
-            ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Container(
+                padding: EdgeInsets.only(right: 16),
                 height: 132,
                 width: 343,
                 decoration: BoxDecoration(
@@ -479,7 +365,165 @@ class Home extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 4),
+                                margin: const EdgeInsets.fromLTRB(15, 0, 0, 4),
+                                child: const Text(
+                                  'Recomended for',
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.fromLTRB(15, 0, 0, 0),
+                                child: const Text(
+                                  '11 Excresise | 32 minutes',
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.fromLTRB(15, 15, 0, 0),
+                                child: Align(
+                                  alignment: Alignment.bottomLeft,
+                                  child: ElevatedButton(
+                                    onPressed: () {},
+                                    style: ElevatedButton.styleFrom(
+                                      primary:
+                                          const Color.fromRGBO(0, 221, 163, 1),
+                                    ),
+                                    child: const Text(
+                                      'view more',
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: SizedBox(
+                            height: 132,
+                            child: Image.network(
+                              'https://media.istockphoto.com/vectors/cute-young-girl-in-red-shorts-jump-in-rope-vector-id1207731535?k=20&m=1207731535&s=612x612&w=0&h=SO_Ik57gD2A_q8OoTWScZV-6OaV2ldoG6-QMhZh3PF8=',
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: Container(
+                padding: EdgeInsets.only(right: 16),
+                height: 132,
+                width: 343,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: const Color.fromARGB(255, 247, 248, 248),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.fromLTRB(15, 0, 0, 4),
+                                child: const Text(
+                                  'Lowerbody Workout',
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.fromLTRB(15, 0, 0, 0),
+                                child: const Text(
+                                  '12 Excresise | 40 minutes',
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.fromLTRB(15, 15, 0, 0),
+                                child: Align(
+                                  alignment: Alignment.bottomLeft,
+                                  child: ElevatedButton(
+                                    onPressed: () {},
+                                    style: ElevatedButton.styleFrom(
+                                      primary:
+                                          const Color.fromRGBO(0, 221, 163, 1),
+                                    ),
+                                    child: const Text(
+                                      'view more',
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: SizedBox(
+                            height: 132,
+                            child: Image.network(
+                              'https://media.istockphoto.com/vectors/fitness-training-in-gym-athletic-woman-running-on-treadmill-young-vector-id1338513375?k=20&m=1338513375&s=612x612&w=0&h=3aaQscOfjX4B5dv_D1lqEOVpG6_WYg6qVmfcpTiol28=',
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: Container(
+                padding: EdgeInsets.only(right: 16),
+                height: 132,
+                width: 343,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: const Color.fromARGB(255, 247, 248, 248),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.fromLTRB(15, 0, 0, 4),
                                 child: const Text(
                                   'AB Workout',
                                   overflow: TextOverflow.ellipsis,
@@ -488,15 +532,18 @@ class Home extends StatelessWidget {
                                       fontWeight: FontWeight.bold),
                                 ),
                               ),
-                              const Text(
-                                '11 Excresise | 32 minutes',
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  fontSize: 10,
+                              Container(
+                                margin: const EdgeInsets.fromLTRB(15, 0, 0, 0),
+                                child: const Text(
+                                  '14 Excresise | 20 minutes',
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                  ),
                                 ),
                               ),
                               Container(
-                                margin: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+                                margin: const EdgeInsets.fromLTRB(15, 15, 0, 0),
                                 child: Align(
                                   alignment: Alignment.bottomLeft,
                                   child: ElevatedButton(
