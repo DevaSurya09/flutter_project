@@ -367,7 +367,7 @@ class Home extends StatelessWidget {
                               Container(
                                 margin: const EdgeInsets.fromLTRB(15, 0, 0, 4),
                                 child: const Text(
-                                  'Recomended for',
+                                  'Fullbody  Workout',
                                   overflow: TextOverflow.ellipsis,
                                   style: const TextStyle(
                                       fontSize: 14,
